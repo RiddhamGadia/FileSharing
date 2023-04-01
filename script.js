@@ -1,3 +1,4 @@
+//authentication keys
 const firebaseConfig = {
   apiKey: "AIzaSyAvJHDSNzCfKzhRgK66wdl0VcLsRgvwKs0",
   authDomain: "clone-610d7.firebaseapp.com",
@@ -11,8 +12,8 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var messagesRef = firebase.database().ref('image');
 
-
-function uploadImage() {
+//function to Upload file to firebase
+function uploadFile() {
   if (document.getElementById("file").value != "") {
     var uploadtext = document.getElementById("upload").innerHTML;
     document.getElementById("upload").innerHTML = "Uploading...";
@@ -76,7 +77,7 @@ function createUniquenumber() {
   return number;
 }
 
-function showimage() {
+function downloadFile() {
   var uniqueId = document.getElementById("unique").value;
   if (uniqueId == "") {
     alert("Unique Id is empty\n Please enter a Unique Id");

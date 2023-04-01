@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Any Share</title>
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3403539919880614"
-     crossorigin="anonymous"></script> -->
+    <title>File Share</title>
 </head>
 <body>
     <div class="card">
-        <h1>Any Share</h1>
+        <h1>File Share</h1>
         
         <h2>Upload File</h2>
    <input type="file" id="file" ><br>
-   <center><button id="upload" onclick="uploadImage()">Upload<img id="uping" src="upload.png" alt="none"/></button></center>
+   <center><button id="upload" onclick="uploadFile()">Upload<img id="uping" src="upload.png" alt="none"/></button></center>
 
    <center><div id="ShowUniqueID" hidden><p>Unique ID</p><input type="text" id="showunique"  value="23456" disabled></input></div></center>
    <!-- <br> -->
@@ -23,7 +21,7 @@
    <h2>Receive File</h2>
    
    <input type="text" id="unique" placeholder="Enter Unique ID">
-   <center><button id="show" onclick="showimage()">Download<img id="downimg" src="download.png" alt="none"/></button></div></center>
+   <center><button id="show" onclick="downloadFile()">Download<img id="downimg" src="download.png" alt="none"/></button></div></center>
 </div>
 </body>
 <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase.js"></script>
